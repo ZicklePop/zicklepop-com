@@ -34,12 +34,15 @@ const styles = {
 }
 
 const classNames = wrap({
-  main: 'measure-narrow center sans-serif near-black f3 fw2 ph2',
+  main: 'vh-100 dt w-100',
+  container: 'dtc v-mid tc',
+  article: 'measure-narrow center sans-serif tl near-black f3 fw2 ph2',
   h1: 'lh-title fw2 f2',
   ul: 'list pl0',
   li: 'lh-title mv2',
   a: 'link underline',
-  hr: 'b--none'
+  hr: 'b--none',
+  img: 'br-100 h5 w5 center db ma3',
 }, css)
 
 export default () => (
@@ -47,28 +50,36 @@ export default () => (
     <Head>
       <title>ZicklePop</title>
     </Head>
-    <h1 className={classNames.h1}>
-      <a
-        {...styles.dotcom}
-        className={t('no-underline near-black')}
-        href='/'
-      >
-        {'ZicklePop'}
-      </a>
-    </h1>
+    <div className={classNames.container}>
+      <article className={classNames.article}>
+        <img 
+          className={classNames.img}
+          src={'/static/icelevel-commission.jpg'}
+          title={'commission by @icelevel'}
+        />
+        <h1 className={classNames.h1}>
+          <a
+            {...styles.dotcom}
+            className={t('no-underline near-black')}
+            href='/'
+          >
+            {'ZicklePop'}
+          </a>
+        </h1>
 
-    <ul {...styles.bullet} className={classNames.ul}>
-      <li className={classNames.li}>
-        {'Tweets on '}
-        <a
-          {...styles.twitter}
-          className={classNames.a}
-          href='https://twitter.com/ZicklePop'
-        >
-          {'Twitter'}
-        </a>
-      </li>
-    </ul>
-
+        <ul {...styles.bullet} className={classNames.ul}>
+          <li className={classNames.li}>
+            {'Tweets on '}
+            <a
+              {...styles.twitter}
+              className={classNames.a}
+              href='https://twitter.com/ZicklePop'
+            >
+              {'Twitter'}
+            </a>
+          </li>
+        </ul>
+      </article>
+    </div>
   </main>
 )
