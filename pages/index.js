@@ -42,7 +42,7 @@ const classNames = wrap({
   li: 'lh-title mv2',
   a: 'link underline',
   hr: 'b--none',
-  img: 'br-100 h5 w5 center db ma3',
+  img: 'br-100 h5 w5 center db ma3'
 }, css)
 
 export default () => (
@@ -52,7 +52,7 @@ export default () => (
     </Head>
     <div className={classNames.container}>
       <article className={classNames.article}>
-        <img 
+        <img
           className={classNames.img}
           src={'/static/icelevel-commission.jpg'}
           title={'commission by @icelevel'}
