@@ -24,11 +24,6 @@ const styles = {
       display: 'inline-block'
     }
   }),
-  creditkarma: style({ color: '#3ddb93' }),
-  facebook: style({ color: '#3c5a99' }),
-  twitter: style({ color: '#55acee' }),
-  github: style({ color: '#1e2327' }),
-  pinboard: style({ color: '#00f' }),
   fun: style({ color: '#69b200' }),
   pro: style({ color: '#00aeff' })
 }
@@ -36,13 +31,13 @@ const styles = {
 const classNames = wrap({
   main: 'vh-100 dt w-100',
   container: 'dtc v-mid tc',
-  article: 'measure-narrow center sans-serif tl near-black f3 fw2 ph2',
+  article: 'measure-narrow center sans-serif near-black f3 fw2 ph2',
   h1: 'lh-title fw2 f2',
-  ul: 'list pl0',
+  ul: 'list pl0 tl',
   li: 'lh-title mv2',
   a: 'link underline',
   hr: 'b--none',
-  img: 'br-100 h5 w5 center db ma3'
+  img: 'br-100 h5 w5 center dib ma3'
 }, css)
 
 export default () => (
@@ -71,11 +66,21 @@ export default () => (
           <li className={classNames.li}>
             {'Tweets on '}
             <a
-              {...styles.twitter}
+              {...styles.pro}
               className={classNames.a}
               href='https://twitter.com/ZicklePop'
             >
               {'Twitter'}
+            </a>
+          </li>
+          <li className={classNames.li}>
+            {'Instas on '}
+            <a
+              {...styles.fun}
+              className={classNames.a}
+              href='https://instagram.com/ZicklePop'
+            >
+              {'Instagram'}
             </a>
           </li>
         </ul>
