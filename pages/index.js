@@ -49,8 +49,8 @@ export default () => (
       <article className={classNames.article}>
         <img
           className={classNames.img}
-          src={'/static/icelevel-commission.jpg'}
-          title={'commission by @icelevel'}
+          src={'/static/uglytarantula-commission.jpg'}
+          title={'commission by @uglytarantula'}
         />
         <h1 className={classNames.h1}>
           <a
