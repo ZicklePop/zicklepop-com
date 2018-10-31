@@ -64,9 +64,20 @@ export default () => (
 
         <ul {...styles.bullet} className={classNames.ul}>
           <li className={classNames.li}>
-            {'Tweets on '}
+            {'Mastodons on '}
             <a
               {...styles.pro}
+              className={classNames.a}
+              rel='me'
+              href='https://nyan.lol/@zicklepop'
+            >
+              {'Nyan.lol'}
+            </a>
+          </li>
+          <li className={classNames.li}>
+            {'Tweets on '}
+            <a
+              {...styles.fun}
               className={classNames.a}
               href='https://twitter.com/ZicklePop'
             >
