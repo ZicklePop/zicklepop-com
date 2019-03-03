@@ -94,6 +94,16 @@ export default () => (
               {'Instagram'}
             </a>
           </li>
+          <li className={classNames.li}>
+            {'Mikus on '}
+            <a
+              {...styles.fun}
+              className={classNames.a}
+              href='https://soundcloud.com/ZicklePop'
+            >
+              {'Soundcloud'}
+            </a>
+          </li>
         </ul>
       </article>
     </div>
