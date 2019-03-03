@@ -8,7 +8,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "standard",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "npm run build && aws s3 sync out/ s3://aws-website-zicklepopcom-wo0tz"
   },
   "author": "Jake Bilbrey",
   "license": "ISC",
