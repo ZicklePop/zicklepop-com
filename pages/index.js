@@ -79,6 +79,7 @@ export default () => (
             <a
               {...styles.fun}
               className={classNames.a}
+              rel='me'
               href='https://instagram.com/ZicklePop'
             >
               {'Instagram'}
@@ -89,6 +90,7 @@ export default () => (
             <a
               {...styles.fun}
               className={classNames.a}
+              rel='me'
               href='https://soundcloud.com/ZicklePop'
             >
               {'Soundcloud'}
