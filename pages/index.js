@@ -64,7 +64,7 @@ export default () => (
 
         <ul {...styles.bullet} className={classNames.ul}>
           <li className={classNames.li}>
-            {'Mastodons on '}
+            {'Words on '}
             <a
               {...styles.pro}
               className={classNames.a}
@@ -75,17 +75,7 @@ export default () => (
             </a>
           </li>
           <li className={classNames.li}>
-            {'Tweets on '}
-            <a
-              {...styles.fun}
-              className={classNames.a}
-              href='https://twitter.com/ZicklePop'
-            >
-              {'Twitter'}
-            </a>
-          </li>
-          <li className={classNames.li}>
-            {'Instas on '}
+            {'Pics on '}
             <a
               {...styles.fun}
               className={classNames.a}
