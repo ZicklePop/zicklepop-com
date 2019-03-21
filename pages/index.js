@@ -10,9 +10,12 @@ if (typeof window !== 'undefined') {
 }
 reset({ insertRule })
 const t = (classNames) => css(tachyons(classNames))
-css.global('body', {
-  color: '#fff',
-  backgroundColor: '#000',
+const white = '#fff'
+const black = '#000'
+const nearBlack = '#111'
+css.global('body, a', {
+  color: darkModeEnabled ? white : nearBlack,
+  backgroundColor: darkModeEnabled ? black : white
 })
 
 const styles = {
@@ -31,13 +34,15 @@ const styles = {
     }
   }),
   fun: style({ color: '#69b200' }),
-  pro: style({ color: '#00aeff' })
+  miku: style({ color: '#39c5bb' }),
+  mel: style({ color: '#00aeff' }),
+  sylveon: style({ color: '#f59bad' })
 }
 
 const classNames = wrap({
   main: 'vh-100 dt w-100',
   container: 'dtc v-mid tc',
-  article: `measure-narrow center sans-serif ${darkModeEnabled ? 'white' : 'near-black'} f3 fw2 ph2`,
+  article: `measure-narrow center sans-serif f3 fw2 ph2`,
   h1: 'lh-title fw2 f2',
   ul: 'list pl0 tl',
   li: 'lh-title mv2',
@@ -61,7 +66,7 @@ export default () => (
         <h1 className={classNames.h1}>
           <a
             {...styles.dotcom}
-            className={t('no-underline near-black')}
+            className={t('no-underline')}
             href='/'
           >
             {'ZicklePop'}
@@ -72,7 +77,7 @@ export default () => (
           <li className={classNames.li}>
             {'Words on '}
             <a
-              {...styles.pro}
+              {...styles.mel}
               className={classNames.a}
               rel='me'
               href='https://nyan.lol/@zicklepop'
@@ -83,7 +88,7 @@ export default () => (
           <li className={classNames.li}>
             {'Pics on '}
             <a
-              {...styles.fun}
+              {...styles.sylveon}
               className={classNames.a}
               rel='me'
               href='https://instagram.com/ZicklePop'
@@ -94,7 +99,7 @@ export default () => (
           <li className={classNames.li}>
             {'Mikus on '}
             <a
-              {...styles.fun}
+              {...styles.miku}
               className={classNames.a}
               rel='me'
               href='https://soundcloud.com/ZicklePop'
