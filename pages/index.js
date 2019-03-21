@@ -3,11 +3,17 @@ import Head from 'next/head'
 import { insertRule, css, style, rehydrate } from 'glamor'
 import { tachyons, reset, wrap } from 'glamor-tachyons'
 
+let darkModeEnabled = false
 if (typeof window !== 'undefined') {
   rehydrate(window.__NEXT_DATA__.ids)
+  darkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches
 }
 reset({ insertRule })
 const t = (classNames) => css(tachyons(classNames))
+css.global('body', {
+  color: '#fff',
+  backgroundColor: '#000',
+})
 
 const styles = {
   dotcom: style({
@@ -31,7 +37,7 @@ const styles = {
 const classNames = wrap({
   main: 'vh-100 dt w-100',
   container: 'dtc v-mid tc',
-  article: 'measure-narrow center sans-serif near-black f3 fw2 ph2',
+  article: `measure-narrow center sans-serif ${darkModeEnabled ? 'white' : 'near-black'} f3 fw2 ph2`,
   h1: 'lh-title fw2 f2',
   ul: 'list pl0 tl',
   li: 'lh-title mv2',
