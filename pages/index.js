@@ -107,6 +107,18 @@ export default () => (
               {'Soundcloud'}
             </a>
           </li>
+          <li className={classNames.li}>
+            {'Do you need to '}
+            <a
+              {...styles.fun}
+              className={classNames.a}
+              rel='me'
+              href='http://givemel.cash'
+            >
+              {'givemel.cash'}
+            </a>
+            {'?'}
+          </li>
         </ul>
       </article>
     </div>
