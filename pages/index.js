@@ -114,7 +114,7 @@ export default () => (
           <li className={classNames.li}>
             {'shortcuts on '}
             <a
-              {...styles.purp}
+              {...styles.hub}
               className={classNames.a}
               rel='me'
               href='https://routinehub.co/user/zicklepop'
