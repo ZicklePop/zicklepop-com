@@ -48,7 +48,7 @@ const classNames = wrap({
   h1: 'lh-title fw2 f2',
   ul: 'list pl0 tl',
   li: 'lh-title mv2',
-  liLast: 'lh-title mb2 mt3',
+  liLast: 'lh-title mb2 mt4',
   a: 'link underline',
   hr: 'b--none',
   img: 'br-100 h5 w5 center dib ma3'
@@ -113,7 +113,7 @@ export default () => (
           <li className={classNames.li}>
             {'Tweets on '}
             <a
-              {...styles.fun}
+              {...styles.purp}
               className={classNames.a}
               rel='me'
               href='https://twitter.com/melkatbilbrey'
