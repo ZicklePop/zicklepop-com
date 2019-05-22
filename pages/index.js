@@ -38,7 +38,8 @@ const styles = {
   mel: style({ color: '#00aeff' }),
   sylveon: style({ color: '#f59bad' }),
   tarantula: style({ color: '#ffb1d5' }),
-  purp: style({ color: '#bd07ff' })
+  purp: style({ color: '#ff07f2' }),
+  hub: style({ color: '#2aa8b0' }),
 }
 
 const classNames = wrap({
@@ -78,7 +79,7 @@ export default () => (
 
         <ul {...styles.bullet} className={classNames.ul}>
           <li className={classNames.li}>
-            {'Words on '}
+            {'words on '}
             <a
               {...styles.mel}
               className={classNames.a}
@@ -89,7 +90,7 @@ export default () => (
             </a>
           </li>
           <li className={classNames.li}>
-            {'Pics on '}
+            {'pics on '}
             <a
               {...styles.sylveon}
               className={classNames.a}
@@ -100,7 +101,7 @@ export default () => (
             </a>
           </li>
           <li className={classNames.li}>
-            {'Mikus on '}
+            {'mikus on '}
             <a
               {...styles.miku}
               className={classNames.a}
@@ -111,7 +112,18 @@ export default () => (
             </a>
           </li>
           <li className={classNames.li}>
-            {'Tweets on '}
+            {'shortcuts on '}
+            <a
+              {...styles.purp}
+              className={classNames.a}
+              rel='me'
+              href='https://routinehub.co/user/zicklepop'
+            >
+              {'routinehub'}
+            </a>
+          </li>
+          <li className={classNames.li}>
+            {'tweets on '}
             <a
               {...styles.purp}
               className={classNames.a}
@@ -122,7 +134,7 @@ export default () => (
             </a>
           </li>
           <li className={classNames.li}>
-            {'Do you need to '}
+            {'do you need to '}
             <a
               {...styles.fun}
               className={classNames.a}
@@ -134,7 +146,7 @@ export default () => (
             {'?'}
           </li>
           <li className={classNames.liLast}>
-            {'Artwork by '}
+            {'artwork by '}
             <a
               {...styles.tarantula}
               className={classNames.a}
