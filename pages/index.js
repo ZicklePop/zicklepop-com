@@ -36,7 +36,9 @@ const styles = {
   fun: style({ color: '#69b200' }),
   miku: style({ color: '#39c5bb' }),
   mel: style({ color: '#00aeff' }),
-  sylveon: style({ color: '#f59bad' })
+  sylveon: style({ color: '#f59bad' }),
+  tarantula: style({ color: '#ffb1d5' }),
+  purp: style({ color: '#bd07ff' })
 }
 
 const classNames = wrap({
@@ -46,6 +48,7 @@ const classNames = wrap({
   h1: 'lh-title fw2 f2',
   ul: 'list pl0 tl',
   li: 'lh-title mv2',
+  liLast: 'lh-title mb2 mt3',
   a: 'link underline',
   hr: 'b--none',
   img: 'br-100 h5 w5 center dib ma3'
@@ -93,7 +96,7 @@ export default () => (
               rel='me'
               href='https://instagram.com/ZicklePop'
             >
-              {'Instagram'}
+              {'instagram'}
             </a>
           </li>
           <li className={classNames.li}>
@@ -104,7 +107,18 @@ export default () => (
               rel='me'
               href='https://soundcloud.com/ZicklePop'
             >
-              {'Soundcloud'}
+              {'soundcloud'}
+            </a>
+          </li>
+          <li className={classNames.li}>
+            {'Tweets on '}
+            <a
+              {...styles.fun}
+              className={classNames.a}
+              rel='me'
+              href='https://twitter.com/melkatbilbrey'
+            >
+              {'twitter'}
             </a>
           </li>
           <li className={classNames.li}>
@@ -118,6 +132,16 @@ export default () => (
               {'givemel.cash'}
             </a>
             {'?'}
+          </li>
+          <li className={classNames.liLast}>
+            {'Artwork by '}
+            <a
+              {...styles.tarantula}
+              className={classNames.a}
+              href='https://www.uglytarantula.com'
+            >
+              {'Ugly Tarantula'}
+            </a>
           </li>
         </ul>
       </article>
