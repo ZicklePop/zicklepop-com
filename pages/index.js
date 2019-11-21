@@ -79,28 +79,6 @@ export default () => (
 
         <ul {...styles.bullet} className={classNames.ul}>
           <li className={classNames.li}>
-            {'words on '}
-            <a
-              {...styles.mel}
-              className={classNames.a}
-              rel='me'
-              href='https://nyan.lol/@zicklepop'
-            >
-              {'Nyan.lol'}
-            </a>
-          </li>
-          <li className={classNames.li}>
-            {'pics on '}
-            <a
-              {...styles.sylveon}
-              className={classNames.a}
-              rel='me'
-              href='https://instagram.com/ZicklePop'
-            >
-              {'instagram'}
-            </a>
-          </li>
-          <li className={classNames.li}>
             {'mikus on '}
             <a
               {...styles.miku}
@@ -128,7 +106,7 @@ export default () => (
               {...styles.purp}
               className={classNames.a}
               rel='me'
-              href='https://twitter.com/melkatbilbrey'
+              href='https://twitter.com/zicklepop'
             >
               {'twitter'}
             </a>
