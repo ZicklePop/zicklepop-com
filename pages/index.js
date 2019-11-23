@@ -39,7 +39,7 @@ const styles = {
   sylveon: style({ color: '#f59bad' }),
   tarantula: style({ color: '#ffb1d5' }),
   purp: style({ color: '#ff07f2' }),
-  hub: style({ color: '#2aa8b0' }),
+  hub: style({ color: '#2aa8b0' })
 }
 
 const classNames = wrap({
