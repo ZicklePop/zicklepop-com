@@ -29,26 +29,23 @@ const Logo = () => {
     setGradient(generateGradient())
   }, [])
   return (
-    <div className='backing center dib'>
-      <div className='mask' />
+    <div className='backing center dib ma0 w5 h5'>
+      <div
+        className='mask w5 h5 bg-white'
+        style={{
+          backgroundImage: gradient,
+          maskSize: 'contain',
+          maskRepeat: 'no-repeat',
+          maskPosition: 'center'
+        }}
+      />
       <style jsx>
         {`
           .backing {
-            width: 16rem;
-            height: 16rem;
-            margin: 0;
             background-color: #000;
-            transition: all 300ms ease-in-out;
           }
           .mask {
-            width: 16rem;
-            height: 16rem;
-            background-image: ${gradient};
-            background-color: #fff;
             mask-image: url(/static/mask-icon.svg);
-            mask-size: contain;
-            mask-repeat: no-repeat;
-            mask-position: center;
           }
           @media (prefers-color-scheme: light) {
             .backing {
