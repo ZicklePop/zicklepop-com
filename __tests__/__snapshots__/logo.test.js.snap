@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component - logo should render 1`] = `
+<div
+  className="jsx-1799654621 backing center dib ma0 w5 h5"
+>
+  <div
+    className="jsx-1799654621 mask w5 h5 bg-white grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundImage": "",
+        "maskPosition": "center",
+        "maskRepeat": "no-repeat",
+        "maskSize": "contain",
+      }
+    }
+  />
+</div>
+`;

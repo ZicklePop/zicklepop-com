@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page - index should render 1`] = `
+<main
+  className="jsx-2152329932  vh-75 dt w-100"
+>
+  <div
+    className="dtc v-mid tc"
+  >
+    <article
+      className="measure-narrow center sans-serif f3 fw2 ph2"
+    >
+      <div
+        className="jsx-1799654621 backing center dib ma0 w5 h5"
+      >
+        <div
+          className="jsx-1799654621 mask w5 h5 bg-white grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundImage": "",
+              "maskPosition": "center",
+              "maskRepeat": "no-repeat",
+              "maskSize": "contain",
+            }
+          }
+        />
+      </div>
+    </article>
+  </div>
+</main>
+`;

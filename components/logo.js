@@ -3,11 +3,10 @@ import random from 'lodash/random'
 
 const colors = [
   '#00aeff',
-  '#69b200',
   '#39c5bb',
   '#2aa8b0',
-  '#ffb1d5',
-  '#ff07f2'
+  '#ff07f2',
+  '#ffb1d5'
 ]
 
 const generateGradient = () => {
@@ -25,19 +24,21 @@ const generateGradient = () => {
 
 const Logo = () => {
   const [gradient, setGradient] = useState('')
+  const getGradient = () => setGradient(generateGradient())
   useEffect(() => {
-    setGradient(generateGradient())
+    getGradient()
   }, [])
   return (
     <div className='backing center dib ma0 w5 h5'>
       <div
-        className='mask w5 h5 bg-white'
+        className='mask w5 h5 bg-white grow'
         style={{
           backgroundImage: gradient,
           maskSize: 'contain',
           maskRepeat: 'no-repeat',
           maskPosition: 'center'
         }}
+        onClick={getGradient}
       />
       <style jsx>
         {`
