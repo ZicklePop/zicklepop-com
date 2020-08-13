@@ -51,7 +51,7 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   title: 'ZicklePop',
-  description: '',
+  description: 'zicklepop',
   className: ''
 }
 
